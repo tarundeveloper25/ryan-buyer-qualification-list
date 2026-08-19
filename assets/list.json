@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "listId": "list_99eafe2c385b",
+  "list": {
+    "id": "list_99eafe2c385b",
+    "name": "Buyer Qualification Cases",
+    "description": "Private buyer qualification cases and approval-gated readiness results. Runtime rows remain in Gabriel only.",
+    "language": "en",
+    "collectionId": "coll_a108fce9c816",
+    "columns": [
+      {
+        "key": "buyer_name",
+        "label": "Buyer Name",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "buyer_contact",
+        "label": "Buyer Contact",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "gmail_thread_ref",
+        "label": "Gmail Thread Reference",
+        "type": "text",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "inquiry_received_at",
+        "label": "Inquiry Received",
+        "type": "date",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "inquiry_summary",
+        "label": "Inquiry Summary",
+        "type": "text",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "target_locations",
+        "label": "Target Locations",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "property_type",
+        "label": "Property Type",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "must_haves",
+        "label": "Must Haves",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "purchase_timeline",
+        "label": "Purchase Timeline",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "financing_status",
+        "label": "Financing Status",
+        "type": "select",
+        "required": null,
+        "options": [
+          "preapproved",
+          "cash_verified",
+          "financing_in_progress",
+          "unknown"
+        ]
+      },
+      {
+        "key": "budget_min",
+        "label": "Minimum Budget",
+        "type": "number",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "budget_max",
+        "label": "Maximum Budget",
+        "type": "number",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "financing_notes",
+        "label": "Financing Notes",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "readiness_score",
+        "label": "Readiness Score",
+        "type": "number",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "score_band",
+        "label": "Score Band",
+        "type": "select",
+        "required": null,
+        "options": [
+          "ready",
+          "developing",
+          "needs_discovery"
+        ]
+      },
+      {
+        "key": "score_rationale",
+        "label": "Score Rationale",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "qualification_gaps",
+        "label": "Qualification Gaps",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "next_questions",
+        "label": "Next Questions",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "draft_response",
+        "label": "Draft Response",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "suggested_slots",
+        "label": "Suggested Call Slots",
+        "type": "text",
+        "required": null,
+        "options": null
+      }
+    ],
+    "pipelineId": "pl_2c40bbc4835c",
+    "child": null,
+    "pageId": "0ec94bd1-83bc-4bdc-a529-1f62c0150453"
+  },
+  "commitMessage": "Initial migration from list editor"
+}
