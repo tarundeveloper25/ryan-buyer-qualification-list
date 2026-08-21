@@ -7,49 +7,145 @@
     "description": "Private buyer qualification cases and approval-gated readiness results. Runtime rows remain in Gabriel only.",
     "language": "en",
     "columns": [
-      {"key":"case_id","label":"Case ID","type":"text","required":true},
-      {"key":"buyer_name","label":"Buyer Name","type":"text","required":true},
-      {"key":"email","label":"Email","type":"text","required":true},
-      {"key":"buyer_contact","label":"Buyer Contact","type":"text","required":false},
-      {"key":"gmail_thread_ref","label":"Gmail Thread Reference","type":"text","required":false},
-      {"key":"inquiry_received_at","label":"Inquiry Received","type":"date","required":false},
-      {"key":"inquiry_summary","label":"Inquiry Summary","type":"text","required":true},
-      {"key":"desired","label":"Desired Property","type":"text","required":true},
-      {"key":"target_locations","label":"Target Locations","type":"text","required":false},
-      {"key":"property_type","label":"Property Type","type":"text","required":false},
-      {"key":"must_haves","label":"Must Haves","type":"text","required":false},
-      {"key":"timeline","label":"Timeline","type":"text","required":true},
-      {"key":"purchase_timeline","label":"Purchase Timeline","type":"text","required":false},
-      {"key":"occupancy","label":"Occupancy","type":"text","required":false},
-      {"key":"commute_max_min","label":"Maximum Commute Minutes","type":"number","required":false},
-      {"key":"financing","label":"Financing","type":"text","required":true},
-      {"key":"financing_status","label":"Financing Status","type":"select","required":false,"options":["preapproved","cash_verified","financing_in_progress","unknown"]},
-      {"key":"budget_min_usd","label":"Budget Minimum USD","type":"number","required":true},
-      {"key":"budget_max_usd","label":"Budget Maximum USD","type":"number","required":true},
-      {"key":"budget_min","label":"Minimum Budget","type":"number","required":false},
-      {"key":"budget_max","label":"Maximum Budget","type":"number","required":false},
-      {"key":"preapproval_cap_usd","label":"Pre-approval Cap USD","type":"number","required":false},
-      {"key":"down_payment_usd","label":"Down Payment USD","type":"number","required":false},
-      {"key":"monthly_housing_max_usd","label":"Monthly Housing Maximum USD","type":"number","required":false},
-      {"key":"financing_notes","label":"Financing Notes","type":"text","required":false},
-      {"key":"westbrook_3bed_median_usd","label":"Westbrook 3-bed Median USD","type":"number","required":false},
-      {"key":"comp_14_maple_ave_sold_usd","label":"14 Maple Ave Sold USD","type":"number","required":false},
-      {"key":"comp_8_cedar_lane_sold_usd","label":"8 Cedar Lane Sold USD","type":"number","required":false},
-      {"key":"fit_score_target","label":"Fit Score Target","type":"number","required":false},
-      {"key":"readiness_score","label":"Readiness Score","type":"number","required":false},
-      {"key":"fit_band","label":"Fit Band","type":"select","required":false,"options":["strong","developing","needs_discovery"]},
-      {"key":"score_band","label":"Score Band","type":"select","required":false,"options":["strong","ready","developing","needs_discovery"]},
-      {"key":"score_rationale","label":"Score Rationale","type":"text","required":false},
-      {"key":"qualification_gaps","label":"Qualification Gaps","type":"text","required":false},
-      {"key":"next_questions","label":"Next Questions","type":"json","required":false},
-      {"key":"draft_response","label":"Draft Response","type":"text","required":false},
-      {"key":"suggested_slots","label":"Suggested Call Slots","type":"json","required":false},
-      {"key":"pipeline_stage","label":"Pipeline Stage","type":"select","required":true,"options":["intake","scored","drafted","slots_ready"]}
+      {
+        "key": "case_id",
+        "label": "Case ID",
+        "type": "text",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "buyer_name",
+        "label": "Buyer Name",
+        "type": "text",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "email",
+        "label": "Email",
+        "type": "text",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "inquiry_summary",
+        "label": "Inquiry Summary",
+        "type": "text",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "desired",
+        "label": "Desired Property",
+        "type": "text",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "budget_min_usd",
+        "label": "Budget Minimum USD",
+        "type": "number",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "budget_max_usd",
+        "label": "Budget Maximum USD",
+        "type": "number",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "financing",
+        "label": "Financing",
+        "type": "text",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "down_payment_usd",
+        "label": "Down Payment USD",
+        "type": "number",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "monthly_housing_max_usd",
+        "label": "Monthly Housing Maximum USD",
+        "type": "number",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "timeline",
+        "label": "Timeline",
+        "type": "text",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "occupancy",
+        "label": "Occupancy",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "commute_max_min",
+        "label": "Maximum Commute Minutes",
+        "type": "number",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "fit_score_target",
+        "label": "Fit Score Target",
+        "type": "number",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "fit_band",
+        "label": "Fit Band",
+        "type": "select",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "next_questions",
+        "label": "Next Questions",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "draft_response",
+        "label": "Draft Response",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "suggested_slots",
+        "label": "Suggested Call Slots",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "pipeline_stage",
+        "label": "Pipeline Stage",
+        "type": "select",
+        "required": true,
+        "options": null
+      }
     ],
     "pipelineRef": {
       "kind": "pipeline",
       "resourceKey": "pipeline.ryan.buyer-qualification-pipeline"
-    }
+    },
+    "child": null
   },
-  "commitMessage": "Repair portable buyer qualification list schema"
+  "commitMessage": "Update list definition"
 }
