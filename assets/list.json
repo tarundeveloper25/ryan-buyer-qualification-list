@@ -110,7 +110,11 @@
         "label": "Fit Band",
         "type": "select",
         "required": null,
-        "options": null
+        "options": [
+          "strong",
+          "developing",
+          "needs_discovery"
+        ]
       },
       {
         "key": "next_questions",
@@ -138,7 +142,12 @@
         "label": "Pipeline Stage",
         "type": "select",
         "required": true,
-        "options": null
+        "options": [
+          "intake",
+          "scored",
+          "drafted",
+          "slots_ready"
+        ]
       }
     ],
     "pipelineRef": {
